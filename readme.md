@@ -18,9 +18,9 @@
 
 | Интервал | HEX-код | ~отображение цветов |
 |---------|---------|---------|
-| `== 1.0` | `FF0000` |![цвет FF0000](https://github.com/YOya-Shep/data-vizualizer/blob/main/fotos/colours/colour_FF0000.png)|
-| `== -1.0` | `0000FF` |![цвет 0000FF](https://github.com/YOya-Shep/data-vizualizer/blob/main/fotos/colours/colour_0000FF.png)|
-| `== 0.0` | `FFFFFF` |![цвет FFFFFF](https://github.com/YOya-Shep/data-vizualizer/blob/main/fotos/colours/colour_FFFFFF.png)|
+| `== 1.0` | `FF0000` |![цвет FF0000](https://github.com/YOya-Shep/data-vizualizer/blob/main/fotos/colours/colour_red.png)|
+| `== -1.0` | `0000FF` |![цвет 0000FF](https://github.com/YOya-Shep/data-vizualizer/blob/main/fotos/colours/colour_blue.png)|
+| `== 0.0` | `FFFFFF` |![цвет FFFFFF](https://github.com/YOya-Shep/data-vizualizer/blob/main/fotos/colours/colour_white.png)|
 | `(0.8, 1.0]` | `FF4500` |![цвет FF4500](https://github.com/YOya-Shep/data-vizualizer/blob/main/fotos/colours/colour_FF4500.png)|
 | `(0.6, 0.8]` | `FF8C00` |![цвет FF8C00](https://github.com/YOya-Shep/data-vizualizer/blob/main/fotos/colours/colour_FF8C00.png)|
 | `(0.4, 0.6]` | `FFFF00` |![цвет FFFF00](https://github.com/YOya-Shep/data-vizualizer/blob/main/fotos/colours/colour_FFFF00.png)|
@@ -149,5 +149,6 @@ import pandas as pd
 
 
 Код проверен линтерами isort и ruff. Ruff сейчас показывает, что некоторые `except Exception as e:` необходимо изменить, но это происходит из-за того, что выводы `print` в настоящий момент закомментированы. Приложение собрано в исполняемый `.exe` файл с помощью `pyinstaller`.
+
 
 
