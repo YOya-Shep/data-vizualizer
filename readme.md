@@ -18,7 +18,7 @@
 
 | Интервал | HEX-код | Цвет |
 |---------|---------|------|
-| `== 1.0` | `FF0000` | <span style="display:inline-block;width:20px;height:20px;background:#FF0000;border:1px solid #ff0000ff; border-radius:2px;"></span> |
+| `== 1.0` | `FF0000` | <div style="width: 50px; height: 20px; background-color: #FF0000;"></div> |
 | `== -1.0` | `0000FF` | <span style="display:inline-block;width:20px;height:20px;background:#0000FF;border:1px solid #0000ffff; border-radius:2px;"></span> |
 | `== 0.0` | `FFFFFF` | <span style="display:inline-block;width:20px;height:20px;background:#FFFFFF;border:1px solid #ffffffff; border-radius:2px;"></span> |
 | `(0.8, 1.0]` | `FF4500` | <span style="display:inline-block;width:20px;height:20px;background:#FF4500;border:1px solid #ddd; border-radius:2px;"></span> |
@@ -33,7 +33,7 @@
 | `[-1.0, -0.8)` | `0080FF` | <span style="display:inline-block;width:20px;height:20px;background:#0080FF;border:1px solid #ddd; border-radius:2px;"></span> |
 
 
-+ Построение 3-x видов графиков. Можно выбрать построить 1 из типов или все одновременно, для этого нужно проставить галочки слева от нужных видов графиков.
++ Построение 3-x видов графиков. Можно выбрать, построить 1 из типов или все одновременно, для этого нужно проставить галочки слева от нужных видов графиков.
     
     * scatter-plot
 
@@ -148,6 +148,7 @@ import pandas as pd
 ```
 
 
-Код проверен линтерами isort и ruff. Ruff сейчас показывает, что некоторые `except Exception as e:` необходимо изменить, но это происходит из-за того, что выводы print в настоящий момент закомментированы. Приложение собрано в исполняемый `.exe` файл с помощью `pyinstaller`.
+Код проверен линтерами isort и ruff. Ruff сейчас показывает, что некоторые `except Exception as e:` необходимо изменить, но это происходит из-за того, что выводы `print` в настоящий момент закомментированы. Приложение собрано в исполняемый `.exe` файл с помощью `pyinstaller`.
+
 
 
