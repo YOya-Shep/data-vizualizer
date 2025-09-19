@@ -16,21 +16,21 @@
 + Создание матрицы корреляции Пирсона и сохранение как файл с именем типа correlation_table_%Y%m%d_%H%M%S.xlsx. Пример таблицы приложен в [rezults](https://github.com/YOya-Shep/data-vizualizer/blob/main/results/correlation_table_20250919_014329.xlsx).
 Матрица корреляции окрашивается по правилам таблицы ниже. В программном коде эти правила описаны в переменной `_CORRELATION_COLOR_MAP` класса `DataAnalyzer` файла `processor.py`.
 
-| Интервал | HEX-код | Цвет |
-|---------|---------|------|
-| `== 1.0` | `FF0000` | <div style="width: 50px; height: 20px; background-color: #FF0000;"></div> |
-| `== -1.0` | `0000FF` | <span style="display:inline-block;width:20px;height:20px;background:#0000FF;border:1px solid #0000ffff; border-radius:2px;"></span> |
-| `== 0.0` | `FFFFFF` | <span style="display:inline-block;width:20px;height:20px;background:#FFFFFF;border:1px solid #ffffffff; border-radius:2px;"></span> |
-| `(0.8, 1.0]` | `FF4500` | <span style="display:inline-block;width:20px;height:20px;background:#FF4500;border:1px solid #ddd; border-radius:2px;"></span> |
-| `(0.6, 0.8]` | `FF8C00` | <span style="display:inline-block;width:20px;height:20px;background:#FF8C00;border:1px solid #ddd; border-radius:2px;"></span> |
-| `(0.4, 0.6]` | `FFFF00` | <span style="display:inline-block;width:20px;height:20px;background:#FFFF00;border:1px solid #ddd; border-radius:2px;"></span> |
-| `(0.2, 0.4]` | `FFBC00` | <span style="display:inline-block;width:20px;height:20px;background:#FFBC00;border:1px solid #ddd; border-radius:2px;"></span> |
-| `(0.0, 0.2]` | `FFFFE0` | <span style="display:inline-block;width:20px;height:20px;background:#FFFFE0;border:1px solid #ddd; border-radius:2px;"></span> |
-| `[-0.2, 0.0)` | `BCFFFF` | <span style="display:inline-block;width:20px;height:20px;background:#BCFFFF;border:1px solid #ddd; border-radius:2px;"></span> |
-| `[-0.4, -0.2)` | `00FFFF` | <span style="display:inline-block;width:20px;height:20px;background:#00FFFF;border:1px solid #ddd; border-radius:2px;"></span> |
-| `[-0.6, -0.4)` | `25BEFF` | <span style="display:inline-block;width:20px;height:20px;background:#25BEFF;border:1px solid #ddd; border-radius:2px;"></span> |
-| `[-0.8, -0.6)` | `0093D2` | <span style="display:inline-block;width:20px;height:20px;background:#0093D2;border:1px solid #ddd; border-radius:2px;"></span> |
-| `[-1.0, -0.8)` | `0080FF` | <span style="display:inline-block;width:20px;height:20px;background:#0080FF;border:1px solid #ddd; border-radius:2px;"></span> |
+| Интервал | HEX-код |
+|---------|---------|
+| `== 1.0` | `FF0000` |
+| `== -1.0` | `0000FF` |
+| `== 0.0` | `FFFFFF` |
+| `(0.8, 1.0]` | `FF4500` |
+| `(0.6, 0.8]` | `FF8C00` |
+| `(0.4, 0.6]` | `FFFF00` |
+| `(0.2, 0.4]` | `FFBC00` |
+| `(0.0, 0.2]` | `FFFFE0` |
+| `[-0.2, 0.0)` | `BCFFFF` |
+| `[-0.4, -0.2)` | `00FFFF` |
+| `[-0.6, -0.4)` | `25BEFF` | 
+| `[-0.8, -0.6)` | `0093D2` | 
+| `[-1.0, -0.8)` | `0080FF` |
 
 
 + Построение 3-x видов графиков. Можно выбрать, построить 1 из типов или все одновременно, для этого нужно проставить галочки слева от нужных видов графиков.
@@ -149,6 +149,3 @@ import pandas as pd
 
 
 Код проверен линтерами isort и ruff. Ruff сейчас показывает, что некоторые `except Exception as e:` необходимо изменить, но это происходит из-за того, что выводы `print` в настоящий момент закомментированы. Приложение собрано в исполняемый `.exe` файл с помощью `pyinstaller`.
-
-
-
