@@ -16,21 +16,21 @@
 + Создание матрицы корреляции Пирсона и сохранение как файл с именем типа correlation_table_%Y%m%d_%H%M%S.xlsx. Пример таблицы приложен в [rezults](https://github.com/YOya-Shep/data-vizualizer/blob/main/results/correlation_table_20250919_014329.xlsx).
 Матрица корреляции окрашивается по правилам таблицы ниже. В программном коде эти правила описаны в переменной `_CORRELATION_COLOR_MAP` класса `DataAnalyzer` файла `processor.py`.
 
-| Интервал | HEX-код | Примерное отображение цветов |
+| Интервал | HEX-код | ~отображение цветов |
 |---------|---------|---------|
-| `== 1.0` | `FF0000` ||
-| `== -1.0` | `0000FF` ||
-| `== 0.0` | `FFFFFF` ||
-| `(0.8, 1.0]` | `FF4500` ||
-| `(0.6, 0.8]` | `FF8C00` | |
-| `(0.4, 0.6]` | `FFFF00` ||
-| `(0.2, 0.4]` | `FFBC00` ||
-| `(0.0, 0.2]` | `FFFFE0` ||
-| `[-0.2, 0.0)` | `BCFFFF` ||
-| `[-0.4, -0.2)` | `00FFFF` ||
-| `[-0.6, -0.4)` | `25BEFF` | |
-| `[-0.8, -0.6)` | `0093D2` | |
-| `[-1.0, -0.8)` | `0080FF` |![цвет 0080FF](https://github.com/YOya-Shep/data-vizualizer/blob/main/fotos/colours/colour_0080FF.png) |
+| `== 1.0` | `FF0000` |![цвет FF0000](https://github.com/YOya-Shep/data-vizualizer/blob/main/fotos/colours/colour_FF0000.png)|
+| `== -1.0` | `0000FF` |![цвет 0000FF](https://github.com/YOya-Shep/data-vizualizer/blob/main/fotos/colours/colour_0000FF.png)|
+| `== 0.0` | `FFFFFF` |![цвет FFFFFF](https://github.com/YOya-Shep/data-vizualizer/blob/main/fotos/colours/colour_FFFFFF.png)|
+| `(0.8, 1.0]` | `FF4500` |![цвет FF4500](https://github.com/YOya-Shep/data-vizualizer/blob/main/fotos/colours/colour_FF4500.png)|
+| `(0.6, 0.8]` | `FF8C00` |![цвет FF8C00](https://github.com/YOya-Shep/data-vizualizer/blob/main/fotos/colours/colour_FF8C00.png)|
+| `(0.4, 0.6]` | `FFFF00` |![цвет FFFF00](https://github.com/YOya-Shep/data-vizualizer/blob/main/fotos/colours/colour_FFFF00.png)|
+| `(0.2, 0.4]` | `FFBC00` |![цвет FFBC00](https://github.com/YOya-Shep/data-vizualizer/blob/main/fotos/colours/colour_FFBC00.png)|
+| `(0.0, 0.2]` | `FFFFE0` |![цвет FFFFE0](https://github.com/YOya-Shep/data-vizualizer/blob/main/fotos/colours/colour_FFFFE0.png)|
+| `[-0.2, 0.0)` | `BCFFFF` |![цвет BCFFFF](https://github.com/YOya-Shep/data-vizualizer/blob/main/fotos/colours/colour_BCFFFF.png)|
+| `[-0.4, -0.2)` | `00FFFF` |![цвет 00FFFF](https://github.com/YOya-Shep/data-vizualizer/blob/main/fotos/colours/colour_00FFFF.png)|
+| `[-0.6, -0.4)` | `25BEFF` |![цвет 25BEFF](https://github.com/YOya-Shep/data-vizualizer/blob/main/fotos/colours/colour_25BEFF.png)|
+| `[-0.8, -0.6)` | `0093D2` |![цвет 0093D2](https://github.com/YOya-Shep/data-vizualizer/blob/main/fotos/colours/colour_0093D2.png)|
+| `[-1.0, -0.8)` | `0080FF` |![цвет 0080FF](https://github.com/YOya-Shep/data-vizualizer/blob/main/fotos/colours/colour_0080FF.png)|
 
 
 + Построение 3-x видов графиков. Можно выбрать, построить 1 из типов или все одновременно, для этого нужно проставить галочки слева от нужных видов графиков.
@@ -149,4 +149,5 @@ import pandas as pd
 
 
 Код проверен линтерами isort и ruff. Ruff сейчас показывает, что некоторые `except Exception as e:` необходимо изменить, но это происходит из-за того, что выводы `print` в настоящий момент закомментированы. Приложение собрано в исполняемый `.exe` файл с помощью `pyinstaller`.
+
 
