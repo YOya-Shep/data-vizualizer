@@ -148,7 +148,5 @@ import pandas as pd
 ```
 
 
-Код проверен линтерами isort и ruff. Ruff сейчас показывает, что некоторые `except Exception as e:` необходимо изменить, но это происходит из-за того, что выводы `print` в настоящий момент закомментированы. Приложение собрано в исполняемый `.exe` файл с помощью `pyinstaller`.
-
-
+Код проверен линтерами isort и ruff. Ruff сейчас показывает, что некоторые `except Exception as e:` необходимо изменить, но это происходит из-за того, что выводы `print` в настоящий момент закомментированы. Приложение собрано в исполняемый `.exe` файл с помощью `pyinstaller`. Скачать приложение DataVizualizer_v1 можно [здесь](https://github.com/YOya-Shep/data-vizualizer/blob/main/DataVizualizer_v1.zip)
 
